@@ -12,7 +12,11 @@ def findpairs(a,n,sum):
         else:
             mydict[a[i]]=1
 
-a=[1,5,7,-1,5]
-n=len(a)
+from array import *
+a=array('i',[])
+n=int(input("Length of an array: "))
+for i in range(n):
+    x=int(input("Enter array elements: "))
+    a.append(x)
 sum=6
 findpairs(a,n,sum)
